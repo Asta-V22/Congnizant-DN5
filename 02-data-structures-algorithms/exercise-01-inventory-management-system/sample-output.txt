@@ -1,0 +1,37 @@
+=== Adding Products ===
+  Added: Product[id=101, name='Laptop', qty=50, price=75000.00]
+  Added: Product[id=102, name='Mouse', qty=200, price=500.00]
+  Added: Product[id=103, name='Keyboard', qty=120, price=1500.00]
+  Added: Product[id=104, name='Monitor', qty=30, price=22000.00]
+  ERROR: Product ID 101 already exists.
+
+=== Current Inventory ===
+  Product[id=101, name='Laptop', qty=50, price=75000.00]
+  Product[id=102, name='Mouse', qty=200, price=500.00]
+  Product[id=103, name='Keyboard', qty=120, price=1500.00]
+  Product[id=104, name='Monitor', qty=30, price=22000.00]
+
+=== Updating Product 102 (Mouse -> Wireless Mouse) ===
+  Updated: Product[id=102, name='Wireless Mouse', qty=180, price=800.00]
+
+=== Inventory After Update ===
+  Product[id=101, name='Laptop', qty=50, price=75000.00]
+  Product[id=102, name='Wireless Mouse', qty=180, price=800.00]
+  Product[id=103, name='Keyboard', qty=120, price=1500.00]
+  Product[id=104, name='Monitor', qty=30, price=22000.00]
+
+=== Deleting Product 103 (Keyboard) ===
+  Deleted: Product[id=103, name='Keyboard', qty=120, price=1500.00]
+
+=== Inventory After Deletion ===
+  Product[id=101, name='Laptop', qty=50, price=75000.00]
+  Product[id=102, name='Wireless Mouse', qty=180, price=800.00]
+  Product[id=104, name='Monitor', qty=30, price=22000.00]
+
+=== Edge Case: Update Non-existent Product ===
+  ERROR: Product ID 999 not found.
+
+=== Edge Case: Delete Non-existent Product ===
+  ERROR: Product ID 999 not found.
+
+Note: HashMap does not guarantee iteration order. Product display order may vary between runs.

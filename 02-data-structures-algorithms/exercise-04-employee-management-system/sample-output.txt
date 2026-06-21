@@ -1,0 +1,38 @@
+=== Adding Employees (capacity=5) ===
+  Added: Employee[id=201, name='Arun', position='Developer', salary=85000.00]
+  Added: Employee[id=202, name='Bhavna', position='Designer', salary=72000.00]
+  Added: Employee[id=203, name='Chetan', position='Manager', salary=110000.00]
+  Added: Employee[id=204, name='Deepa', position='Tester', salary=68000.00]
+
+=== Current Records ===
+  [0] Employee[id=201, name='Arun', position='Developer', salary=85000.00]
+  [1] Employee[id=202, name='Bhavna', position='Designer', salary=72000.00]
+  [2] Employee[id=203, name='Chetan', position='Manager', salary=110000.00]
+  [3] Employee[id=204, name='Deepa', position='Tester', salary=68000.00]
+  Size: 4/5
+
+=== Search by Employee ID ===
+  Searching for ID 203: Employee[id=203, name='Chetan', position='Manager', salary=110000.00]
+  Searching for ID 999: Not found
+
+=== Deleting Employee 202 (Bhavna) ===
+  Deleted: Employee[id=202, name='Bhavna', position='Designer', salary=72000.00]
+
+=== Records After Deletion ===
+  [0] Employee[id=201, name='Arun', position='Developer', salary=85000.00]
+  [1] Employee[id=203, name='Chetan', position='Manager', salary=110000.00]
+  [2] Employee[id=204, name='Deepa', position='Tester', salary=68000.00]
+  Size: 3/5
+
+=== Adding New Employee After Deletion ===
+  Added: Employee[id=205, name='Esha', position='Analyst', salary=77000.00]
+
+=== Final Records ===
+  [0] Employee[id=201, name='Arun', position='Developer', salary=85000.00]
+  [1] Employee[id=203, name='Chetan', position='Manager', salary=110000.00]
+  [2] Employee[id=204, name='Deepa', position='Tester', salary=68000.00]
+  [3] Employee[id=205, name='Esha', position='Analyst', salary=77000.00]
+
+=== Edge Case: Adding Beyond Capacity ===
+  Added: Employee[id=206, name='Farhan', position='Intern', salary=35000.00]
+  ERROR: Array is full (capacity=5). Cannot add.

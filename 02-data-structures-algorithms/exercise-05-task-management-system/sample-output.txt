@@ -1,0 +1,39 @@
+=== Adding Tasks ===
+  Added: Task[id=1, name='Design database schema', status='Pending']
+  Added: Task[id=2, name='Implement REST API', status='In Progress']
+  Added: Task[id=3, name='Write unit tests', status='Pending']
+  Added: Task[id=4, name='Set up CI/CD pipeline', status='Pending']
+  Added: Task[id=5, name='Deploy to staging', status='Not Started']
+
+=== All Tasks (Traverse) ===
+  [0] Task[id=1, name='Design database schema', status='Pending']
+  [1] Task[id=2, name='Implement REST API', status='In Progress']
+  [2] Task[id=3, name='Write unit tests', status='Pending']
+  [3] Task[id=4, name='Set up CI/CD pipeline', status='Pending']
+  [4] Task[id=5, name='Deploy to staging', status='Not Started']
+  Total tasks: 5
+
+=== Searching for Tasks ===
+  Search ID 3: Task[id=3, name='Write unit tests', status='Pending']
+  Search ID 99: Not found
+
+=== Deleting Task 3 (Write unit tests) ===
+  Deleted: Task[id=3, name='Write unit tests', status='Pending']
+
+=== Tasks After Deletion ===
+  [0] Task[id=1, name='Design database schema', status='Pending']
+  [1] Task[id=2, name='Implement REST API', status='In Progress']
+  [2] Task[id=4, name='Set up CI/CD pipeline', status='Pending']
+  [3] Task[id=5, name='Deploy to staging', status='Not Started']
+  Total tasks: 4
+
+=== Deleting Task 1 (Head Node) ===
+  Deleted: Task[id=1, name='Design database schema', status='Pending']
+
+=== Tasks After Head Deletion ===
+  [0] Task[id=2, name='Implement REST API', status='In Progress']
+  [1] Task[id=4, name='Set up CI/CD pipeline', status='Pending']
+  [2] Task[id=5, name='Deploy to staging', status='Not Started']
+
+=== Edge Case: Delete Non-existent Task ===
+  ERROR: Task ID 99 not found.

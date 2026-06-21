@@ -1,0 +1,39 @@
+=== Original Orders ===
+  Order[id=1001, customer='Alice', total=4500.00]
+  Order[id=1002, customer='Bob', total=1200.00]
+  Order[id=1003, customer='Charlie', total=8900.00]
+  Order[id=1004, customer='Diana', total=350.00]
+  Order[id=1005, customer='Eve', total=6700.00]
+  Order[id=1006, customer='Frank', total=2100.00]
+
+=== Sorted by Total Price (Bubble Sort) ===
+  Order[id=1004, customer='Diana', total=350.00]
+  Order[id=1002, customer='Bob', total=1200.00]
+  Order[id=1006, customer='Frank', total=2100.00]
+  Order[id=1001, customer='Alice', total=4500.00]
+  Order[id=1005, customer='Eve', total=6700.00]
+  Order[id=1003, customer='Charlie', total=8900.00]
+
+=== Sorted by Total Price (Quick Sort) ===
+  Order[id=1004, customer='Diana', total=350.00]
+  Order[id=1002, customer='Bob', total=1200.00]
+  Order[id=1006, customer='Frank', total=2100.00]
+  Order[id=1001, customer='Alice', total=4500.00]
+  Order[id=1005, customer='Eve', total=6700.00]
+  Order[id=1003, customer='Charlie', total=8900.00]
+
+=== Performance Comparison ===
+  Dataset size: 6 orders
+
+  Bubble Sort:
+    Best:    O(n)      — already sorted, with early termination
+    Average: O(n^2)    — ~36 comparisons
+    Worst:   O(n^2)    — reverse sorted
+
+  Quick Sort:
+    Best:    O(n log n)
+    Average: O(n log n) — ~15 comparisons
+    Worst:   O(n^2)    — bad pivot selection
+
+  Conclusion: Quick Sort is preferred for large datasets due to
+  O(n log n) average performance and cache-friendly access patterns.

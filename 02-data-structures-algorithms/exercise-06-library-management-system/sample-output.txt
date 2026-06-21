@@ -1,0 +1,35 @@
+=== Linear Search (Unsorted Catalog) ===
+  Searching: '1984'
+  Result: Book[id=3, title='1984', author='George Orwell']
+
+  Searching: 'The Lord of the Rings'
+  Result: Not found
+
+=== Binary Search (Sorted Catalog) ===
+  Sorted catalog:
+    Book[id=3, title='1984', author='George Orwell']
+    Book[id=6, title='Brave New World', author='Aldous Huxley']
+    Book[id=8, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling']
+    Book[id=4, title='Pride and Prejudice', author='Jane Austen']
+    Book[id=7, title='The Alchemist', author='Paulo Coelho']
+    Book[id=5, title='The Catcher in the Rye', author='J.D. Salinger']
+    Book[id=1, title='The Great Gatsby', author='F. Scott Fitzgerald']
+    Book[id=2, title='To Kill a Mockingbird', author='Harper Lee']
+
+  Searching: 'Pride and Prejudice'
+  Result: Book[id=4, title='Pride and Prejudice', author='Jane Austen']
+
+  Searching: 'The Hobbit'
+  Result: Not found
+
+=== When to Use Each Algorithm ===
+  Catalog size: 8 books
+  Linear Search: O(n) — works on unsorted data, simple to implement.
+  Binary Search: O(log n) — much faster, but requires sorted data.
+
+  Use Linear Search when:
+    - The catalog is small.
+    - Books are added/removed frequently (sorting cost too high).
+  Use Binary Search when:
+    - The catalog is large and relatively stable.
+    - Multiple searches are performed after each sort.

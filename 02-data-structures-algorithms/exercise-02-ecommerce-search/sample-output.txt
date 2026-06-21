@@ -1,0 +1,31 @@
+=== Linear Search (Unsorted Array) ===
+  Searching for: 'Running Shoes'
+  Result: Product[id=104, name='Running Shoes', category='Footwear']
+
+  Searching for: 'Tablet'
+  Result: Not found
+
+=== Binary Search (Sorted Array) ===
+  Sorted product order:
+    Product[id=105, name='Backpack', category='Accessories']
+    Product[id=103, name='Desk Chair', category='Furniture']
+    Product[id=102, name='Headphones', category='Electronics']
+    Product[id=107, name='Keyboard', category='Electronics']
+    Product[id=101, name='Laptop', category='Electronics']
+    Product[id=106, name='Monitor', category='Electronics']
+    Product[id=104, name='Running Shoes', category='Footwear']
+    Product[id=108, name='Water Bottle', category='Kitchen']
+
+  Searching for: 'Monitor'
+  Result: Product[id=106, name='Monitor', category='Electronics']
+
+  Searching for: 'Tablet'
+  Result: Not found
+
+=== Performance Comparison ===
+  Dataset size: 8 products
+  Linear Search: O(n)     -> worst case: 8 comparisons
+  Binary Search: O(log n) -> worst case: 3 comparisons
+
+  Conclusion: Binary search is ~2x faster for this dataset,
+  but requires the data to be sorted first (O(n log n) cost).

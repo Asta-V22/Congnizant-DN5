@@ -1,0 +1,40 @@
+=== Financial Forecasting Tool ===
+  Present Value:  Rs 100000.00
+  Growth Rate:    8.0% per year
+  Forecast Period: 10 years
+
+=== Approach 1: Pure Recursion ===
+  Future Value: Rs 215892.50
+
+=== Approach 2: Memoized Recursion ===
+  Future Value: Rs 215892.50
+  Cached entries: 10
+
+=== Approach 3: Iterative ===
+  Future Value: Rs 215892.50
+
+=== Approach 4: Direct Formula (Math.pow) ===
+  Future Value: Rs 215892.50
+
+=== Year-by-Year Growth Forecast ===
+  Year  |  Value
+  ------+-----------------
+  0     | Rs 1,00,000.00
+  1     | Rs 1,08,000.00
+  2     | Rs 1,16,640.00
+  3     | Rs 1,25,971.20
+  4     | Rs 1,36,048.90
+  5     | Rs 1,46,932.81
+  6     | Rs 1,58,687.43
+  7     | Rs 1,71,382.43
+  8     | Rs 1,85,093.02
+  9     | Rs 1,99,900.46
+  10    | Rs 2,15,892.50
+
+=== Performance Comparison ===
+  Approach             | Time    | Space   | Stack Safe?
+  ---------------------+---------+---------+-----------
+  Pure Recursion       | O(n)    | O(n)    | No
+  Memoized Recursion   | O(n)    | O(n)    | No
+  Iterative            | O(n)    | O(1)    | Yes
+  Direct Formula       | O(1)    | O(1)    | Yes
