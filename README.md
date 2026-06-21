@@ -35,4 +35,7 @@ java Main
 
 ## Author
 
-Cognizant Digital Nurture 5.0 — Java FSE Track
+Rudransh Vatsa
+Superset ID: 8001354
+Email : vatsarudransh5854@gmail.com
+Deep Skilling | Java FSE | Digital Nurture 5.0 | Cognizant
